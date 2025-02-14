@@ -120,6 +120,10 @@ ALTER TABLE ProprieteCapsule.TypeCafe ADD CONSTRAINT UC_TypeCafe_Nom UNIQUE (Nom
 
 ALTER TABLE ProprieteCapsule.Pays ADD CONSTRAINT UC_Pays_Nom UNIQUE (Nom)
 
+ALTER TABLE ProprieteCapsule.CafeNoir ADD CONSTRAINT UC_CafeNoir_CapsuleID UNIQUE (CapsuleID)
+
+ALTER TABLE ProprieteCapsule.CafeLait ADD CONSTRAINT UC_CafeLait_CapsuleID UNIQUE (CapsuleID)
+
 ALTER TABLE CapsuleNespresso.Capsule ADD CONSTRAINT CK_Capsule_Amertume CHECK (Amertume >= 0 AND Amertume <= 10)
 
 ALTER TABLE CapsuleNespresso.Capsule ADD CONSTRAINT CK_Capsule_PrixUnite CHECK (PrixUnite > 0)

@@ -104,36 +104,89 @@ VALUES
 
 INSERT INTO ProprieteCapsule.CapsulePays (CapsuleID, PaysID)
 VALUES
-	 (1, 1), -- Capsule 'Café D'exception' -> Brésil
-    (1, 4), -- Capsule 'Café D'exception' -> Vietnam
-    (2, 2), -- Capsule 'Rituels Nocturnes' -> Colombie
-    (2, 6), -- Capsule 'Rituels Nocturnes' -> Costa Rica
-    (3, 3), -- Capsule 'Caramel Fumée' -> Éthiopie
-    (3, 7), -- Capsule 'Caramel Fumée' -> Honduras
-    (4, 1), -- Capsule 'Café Safari' -> Brésil
-    (4, 9), -- Capsule 'Café Safari' -> Cuba
-    (5, 13), -- Capsule 'Aurore Boréale' -> Kenya
-    (6, 4), -- Capsule 'Pleine Lune' -> Vietnam
-    (7, 5), -- Capsule 'Mélange d'Or' -> Guatemala
-    (8, 7), -- Capsule 'Nuit d'Hiver' -> Honduras
-    (8, 12), -- Capsule 'Nuit d'Hiver' -> Tanzanie
-    (9, 8), -- Capsule 'Mocha Surprise' -> Pérou
-    (9, 3), -- Capsule 'Mocha Surprise' -> Éthiopie
-    (10, 9), -- Capsule 'Rêve Sauvage' -> Cuba
-    (10, 11), -- Capsule 'Rêve Sauvage' -> Jamaïque
-    (11, 10), -- Capsule 'Explorateur Créole' -> Jamaïque
-    (12, 11), -- Capsule 'Café Blanc' -> Tanzanie
-    (12, 14), -- Capsule 'Café Blanc' -> Rwanda
-    (13, 12), -- Capsule 'Mélange Intense' -> Rwanda
-    (13, 6), -- Capsule 'Mélange Intense' -> Costa Rica
-    (14, 13), -- Capsule 'Douceur d'Amande' -> Kenya
-    (15, 14), -- Capsule 'Café Ensoleillé' -> Équateur
-    (15, 15), -- Capsule 'Café Ensoleillé' -> Nicaragua
-    (16, 16), -- Capsule 'Jardin Exotique' -> Nicaragua
-    (16, 3), -- Capsule 'Jardin Exotique' -> Éthiopie
-    (17, 17), -- Capsule 'Café Indien' -> Burundi
-    (17, 18), -- Capsule 'Café Indien' -> Papouasie-Nouvelle-Guinée
-    (18, 18), -- Capsule 'Café Royal' -> Papouasie-Nouvelle-Guinée
-    (18, 14), -- Capsule 'Café Royal' -> Kenya
-    (19, 19), -- Capsule 'Étoile d'Orient' -> Philippines
-    (19, 16); -- Capsule 'Étoile d'Orient' -> Nicaragua
+	(1, 1),  -- Café Soleil - Brésil
+    (1, 2),  -- Café Soleil - France
+    (1, 3),  -- Café Soleil - Colombie
+    (1, 4),  -- Café Soleil - Costa Rica
+    (2, 5),  -- Forêt Noire - Mexique
+    (2, 6),  -- Forêt Noire - Guatemala
+    (2, 7),  -- Forêt Noire - Pérou
+    (3, 8),  -- Éclat Tropical - États-Unis
+    (3, 9),  -- Éclat Tropical - Japon
+    (3, 10), -- Éclat Tropical - Italie
+    (3, 11), -- Éclat Tropical - Afrique du Sud
+    (4, 12), -- Chocolat Indien - Argentine
+    (4, 13), -- Chocolat Indien - Kenya
+    (4, 14), -- Chocolat Indien - Papouasie-Nouvelle-Guinée
+    (5, 15), -- Café Azur - Colombie
+    (5, 16), -- Café Azur - Chine
+    (5, 17), -- Café Azur - Sénégal
+    (6, 18), -- Tentation Caramel - Costa Rica
+    (6, 19), -- Tentation Caramel - Rwanda
+    (6, 20), -- Tentation Caramel - Honduras
+    (7, 1),  -- Café Ristretto Noir - Brésil
+    (7, 2),  -- Café Ristretto Noir - France
+    (7, 3),  -- Café Ristretto Noir - Colombie
+    (8, 4),  -- Douceur Vanillée - Costa Rica
+    (8, 5),  -- Douceur Vanillée - Mexique
+    (8, 6),  -- Douceur Vanillée - Guatemala
+    (9, 7),  -- Espresso Royal - Pérou
+    (9, 8),  -- Espresso Royal - États-Unis
+    (9, 9),  -- Espresso Royal - Italie
+    (10, 10), -- Mélange Oriental - Japon
+    (10, 11), -- Mélange Oriental - Afrique du Sud
+    (10, 12), -- Mélange Oriental - Argentine
+    (11, 13), -- Café de la Montagne - Kenya
+    (11, 14), -- Café de la Montagne - Papouasie-Nouvelle-Guinée
+    (11, 15), -- Café de la Montagne - Pérou
+    (12, 16), -- Mystère Espresso - Chine
+    (12, 17), -- Mystère Espresso - Sénégal
+    (12, 18), -- Mystère Espresso - Costa Rica
+    (13, 19), -- Café Eden - Rwanda
+    (13, 20), -- Café Eden - Honduras
+    (13, 1),  -- Café Eden - Brésil
+    (14, 2),  -- Caramel Praliné - France
+    (14, 3),  -- Caramel Praliné - Colombie
+    (14, 4),  -- Caramel Praliné - Costa Rica
+    (15, 5),  -- Café Majestueux - Mexique
+    (15, 6),  -- Café Majestueux - Guatemala
+    (15, 7),  -- Café Majestueux - Pérou
+    (16, 8),  -- Mélange Italien - États-Unis
+    (16, 9),  -- Mélange Italien - Japon
+    (16, 10), -- Mélange Italien - Italie
+    (17, 11), -- Café Safari - Afrique du Sud
+    (17, 12), -- Café Safari - Argentine
+    (17, 13), -- Café Safari - Kenya
+    (18, 14), -- Nuit d'Hiver - Papouasie-Nouvelle-Guinée
+	(19, 15),
+	(20, 16);
+
+
+INSERT INTO ProprieteCapsule.CafeNoir (CapsuleID, Intensite, Torrefaction, Acidite, Corps)
+VALUES
+	(1, 7, 6, 5, 8),
+	(2, 4, 8, 3, 6),
+	(3, 9, 7, 6, 7),
+	(4, 5, 9, 4, 9),
+	(5, 3, 6, 8, 7),
+	(7, 8, 5, 7, 6),
+	(10, 6, 4, 9, 5),
+	(11, 7, 3, 6, 4),
+	(12, 5, 8, 7, 6),
+	(14, 4, 9, 5, 9),
+	(17, 9, 6, 6, 8),
+	(18, 3, 7, 9, 7);
+
+
+
+
+INSERT INTO ProprieteCapsule.CafeLait (CapsuleID, GoutLait, TextureCremeuse)
+VALUES
+	(6, 7, 6),
+	(8, 4, 8),
+	(9, 9, 7),
+	(13, 5, 9),
+	(15, 3, 6),
+	(16, 8, 5),
+	(19, 6, 4),
+	(20, 7, 3);
