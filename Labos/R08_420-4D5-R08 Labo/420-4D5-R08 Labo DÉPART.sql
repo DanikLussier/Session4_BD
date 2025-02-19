@@ -1,3 +1,6 @@
+
+USE [4D5_R08_BDCommerciale]
+GO
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
 --
@@ -63,7 +66,15 @@
 --VOTRE RÉPONSE:
 -- Partie 1 : Création de la vue générale
 
-
+GO
+CREATE VIEW Commandes.vw_NomCLientOuRepresentant AS
+SELECT CO.CommandeID, R.RepresentantID, CL.ClientID, R.Nom AS [Nom du Représentant], CL.Nom AS [Nom Client], CL.Prenom AS [Prenom Client], DateCommande
+FROM Commandes.Commande CO
+INNER JOIN Clients.Client CL
+ON CO.ClientID = CL.ClientID
+INNER JOIN Employes.Representant R
+ON CL.RepresentantID = R.RepresentantID
+GO
 
 
 
@@ -86,7 +97,9 @@
 
 --(4 lignes affectées)
 --VOTRE RÉPONSE:
-
+SELECT [Nom Client], [Prenom Client], DateCommande
+FROM Commandes.vw_NomCLientOuRepresentant
+WHERE [Nom du Représentant] = 'Durant'
 
 
 
@@ -97,8 +110,19 @@
 	-- Q2 A) Création d'une fonction pour compter le NOMBRE d'articles DIFFÉRENTS vendus pour une catégorie id donnée
 	-- VOTRE RÉPONSE:
 
-
-
+	GO
+	CREATE OR ALTER FUNCTION Articles.ufn_NombreArticlesPourCategorieId
+	( @CategorieID int)
+	RETURNS int
+	AS
+	BEGIN
+		RETURN (
+		SELECT COUNT(NumArticle)
+		FROM Articles.Article
+		WHERE CategorieID = @CategorieID
+		)
+	END
+	GO
 
 
 
@@ -116,7 +140,7 @@
 			--(1 ligne affectée)
 	
 	--  VOTRE RÉPONSE: 
-
+	SELECT Articles.ufn_NombreArticlesPourCategorieId(1) AS [Nombre d'articles différients vendus pour la catégorie 1]
 
 
 
@@ -143,7 +167,9 @@
 
 
 	-- VOTRE RÉPONSE:
-
+	SELECT CategorieID, Articles.ufn_NombreArticlesPourCategorieId(CategorieID) AS [Nbre d'articles vendus pour la catégorie]
+	FROM Articles.Categorie
+	GROUP BY CategorieID
 
 
 
@@ -157,8 +183,23 @@
 
 	--  VOTRE RÉPONSE: 
 
-	
-
+	GO
+	CREATE OR ALTER FUNCTION Commandes.ufn_QteArticlesCommandesPourUneCategorie
+	(@CategorieID int)
+	RETURNS int
+	AS
+	BEGIN
+		RETURN (
+			SELECT SUM(QuantiteCommande)
+			FROM Commandes.DetailsCommande DC
+			INNER JOIN Commandes.Commande CO
+			ON CO.CommandeID = DC.CommandeID
+			INNER JOIN Articles.Article A
+			ON DC.ArticleID = A.ArticleID
+			WHERE A.CategorieID = @CategorieID
+		)
+	END
+	GO
 
 
 
@@ -183,7 +224,7 @@
 	
 	--  VOTRE RÉPONSE: 
 
-	
+	SELECT Commandes.ufn_QteArticlesCommandesPourUneCategorie(1) AS [Total d'articles commandés pour la catégorie 1, Électroménagers]
 
 
 
@@ -210,7 +251,8 @@
 			--(9 lignes affectées)
 	-- VOTRE RÉPONSE:
 
-
+	SELECT CategorieID, Categorie, Commandes.ufn_QteArticlesCommandesPourUneCategorie(CategorieID) AS [total d'articles commandés pour la catégorie]
+	FROM Articles.Categorie
 
 
 
@@ -224,6 +266,19 @@
 	-- Q4 A) Faites une fonction pour calculer le total (type de retour : money) d'une commande, pour une commande id donnée en paramètre
 	--  VOTRE RÉPONSE: 
 
+	GO
+	CREATE OR ALTER FUNCTION Commandes.ufn_TotalCommandeParID
+	(@CommandeID int)
+	RETURNS money
+	AS
+	BEGIN
+		RETURN(
+		SELECT ISNULL(SUM(PrixVendu*QuantiteCommande), 0) AS [Total Commande]
+		FROM Commandes.DetailsCommande
+		WHERE CommandeID = @CommandeID
+		)
+	END
+	GO
 
 
 
@@ -239,7 +294,10 @@
 	-- Q4 B) Faites un ALTER TABLE pour ajouter le champ TotalCommande, de type money, NULL dans la table Commande
 	--  VOTRE RÉPONSE: 
 
-	
+	GO
+	ALTER TABLE Commandes.Commande
+	ADD TotalCommande money NULL
+	GO
 
 
 
@@ -260,7 +318,7 @@
 
 	-- VOTRE RÉPONSE:
 
-	
+	SELECT Commandes.ufn_TotalCommandeParID(3) AS [Total de la commande 3]
 
 
 
@@ -272,8 +330,10 @@
 	--Q4 D) Utilisez la fonction que vous venez de faire pour initialiser la valeur totale  pour chaque achat
 	-- VOTRE RÉPONSE
 
-	
-
+	GO
+	UPDATE Commandes.Commande
+	SET TotalCommande = Commandes.ufn_TotalCommandeParID(CommandeID)
+	GO
 
 
 
@@ -311,7 +371,19 @@
 
   --Q5 A) Faites une fonction qui va retourner le nom et le prénom d'un client pour le clientID passé en paramètre
 
-
+  GO
+  CREATE OR ALTER FUNCTION Clients.ufn_NomPrenomPourClientID
+  (@ClientID int)
+  RETURNS int
+  AS
+  BEGIN
+	RETURN (
+		SELECT CONCAT(Nom, Prenom)
+		FROM Clients.Client
+		WHERE ClientID = @ClientID
+	)
+  END
+  GO
 
 
 
@@ -344,7 +416,8 @@
 
 -- VOTRE RÉPONSE:
 
-  
+  SELECT Clients.ufn_NomPrenomPourClientID(ClientID)
+  FROM Clients.Client
 
 
 
