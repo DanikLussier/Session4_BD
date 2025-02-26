@@ -7,6 +7,8 @@ CREATE SCHEMA CapsuleNespresso;
 GO
 CREATE SCHEMA ProprieteCapsule;
 GO
+CREATE SCHEMA Archives;
+GO
 
 CREATE TABLE CapsuleNespresso.Collection(
 	CollectionID int IDENTITY (1,1) NOT NULL,
@@ -76,6 +78,13 @@ CREATE TABLE ProprieteCapsule.CafeLait(
 	CONSTRAINT PK_CafeLait_CafeLaitID PRIMARY KEY (CafeLaitID)
 )
 
+CREATE TABLE Archives.ArchiveCollection(
+	ArchiveCollectionID int IDENTITY(1,1) NOT NULL,
+	CollectionID int NOT NULL,
+	Nom nvarchar(50) NOT NULL,
+	Description nvarchar(500) NOT NULL,
+	DateMAJ datetime NOT NULL
+)
 
 GO
 

@@ -23,11 +23,11 @@ RETURNS int
 AS
 BEGIN
 	RETURN (
-	SELECT SUM(Qte)
+	SELECT ISNULL(SUM(Qte), 0)
 	FROM Commandes.ArticleCommande AC
 	INNER JOIN Commandes.Commande C
 	ON AC.CommandeID = C.CommandeID
-	WHERE ArticleID = @ArticleID AND DATEDIFF(MONTH, C.DatePassee, GETDATE()) <= 1
+	WHERE ArticleID = @ArticleID AND DATEDIFF(DAY, C.DatePassee, GETDATE()) <= 31
 	)
 
 END
@@ -89,7 +89,36 @@ FROM Articles.vw_Top10
 
 --VOTRE RÉPONSE:
 
+GO
+CREATE OR ALTER FUNCTION Commandes.ufn_NombreProduitsDifférentsParCommande
+(@CommandeID int)
+RETURNS int
+AS
+BEGIN
+	RETURN (
+		SELECT COUNT(ArticleCommandeID)
+		FROM Commandes.ArticleCommande
+		WHERE CommandeID = @CommandeID
+	)
+END
+GO
 
+GO
+CREATE OR ALTER VIEW Commandes.vw_Top10CommandesNonTraites AS
+	
+	SELECT TOP(10) C.DatePassee AS [Date Commande], C.CommandeID, A.*, U.UtilisateurID AS [UtilisateurClientID], U.Prenom, U.Nom, U.Courriel, U.NoTel, 
+		Commandes.ufn_NombreProduitsDifférentsParCommande(CommandeID) AS [Nombre d'articles]
+	FROM Commandes.Commande C
+	INNER JOIN Utilisateurs.Adresse A
+	ON C.AdresseID = A.AdresseID
+	INNER JOIN Utilisateurs.Utilisateur U
+	ON C.UtilisateurID = U.UtilisateurID
+	WHERE EstTraitee = 0
+	ORDER BY C.DatePassee
+
+
+
+GO
 
 
 
@@ -113,5 +142,6 @@ FROM Articles.vw_Top10
 
 --VOTRE RÉPONSE:
 
-
+SELECT *
+FROM Commandes.vw_Top10CommandesNonTraites
 
