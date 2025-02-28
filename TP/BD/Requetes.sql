@@ -1,4 +1,5 @@
-
+USE NespressoDB
+GO
 -- Question 1 --
 
 -- La requête doit montrer le nom de toutes les capsules appartenant aux collections ayant l'id 2 ou 5, triées en ordre alphabétique --
@@ -202,7 +203,7 @@ GO
 
 ------ On test le trigger
 
-EXEC CapsuleNespresso.usp_AjoutNouvelleCollection @Nom='Nouvelle Col', @Description='jhgjguyfiuy'
+EXEC CapsuleNespresso.usp_AjoutNouvelleCollection @Nom='Nouvelle Col', @Description='Petite description...'
 
 DELETE FROM CapsuleNespresso.Collection
 WHERE CollectionID = 12
