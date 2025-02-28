@@ -200,14 +200,275 @@ BEGIN
 END
 GO
 
+GO
+CREATE TRIGGER CapsuleNespresso.Capsule_dtrgSupprimerCapsule
+ON CapsuleNespresso.Capsule
+AFTER DELETE
+AS
+BEGIN
+	DECLARE @CapsuleID int;
+	DECLARE @Nom nvarchar(50);
+	DECLARE @DescriptionCourte nvarchar(300);
+	DECLARE @DescriptionLongue nvarchar(1500);
+	DECLARE @DescriptionGout nvarchar(1000);
+	DECLARE @DescriptionTorrefaction nvarchar(1000);
+	DECLARE @Amertume int;
+	DECLARE @PrixUnite numeric(4,2);
+	DECLARE @CollectionID int;
 
------- On test le trigger
+	SELECT 
+		@CapsuleID = CapsuleID,
+		@Nom = Nom,
+		@DescriptionCourte = DescriptionCourte,
+		@DescriptionLongue = DescriptionLongue,
+		@DescriptionGout = DescriptionGout,
+		@DescriptionTorrefaction = DescriptionTorrefaction,
+		@Amertume = Amertume,
+		@PrixUnite = PrixUnite,
+		@CollectionID = CollectionID
+	FROM deleted
 
-EXEC CapsuleNespresso.usp_AjoutNouvelleCollection @Nom='Nouvelle Col', @Description='Petite description...'
-
-DELETE FROM CapsuleNespresso.Collection
-WHERE CollectionID = 12
+	INSERT INTO Archives.ArchiveCapsule (CapsuleID, Nom, DescriptionCourte, DescriptionLongue, DescriptionGout, DescriptionTorrefaction, Amertume, PrixUnite, CollectionID, DateMAJ)
+	VALUES (@CapsuleID, @Nom, @DescriptionCourte, @DescriptionLongue, @DescriptionGout, @DescriptionTorrefaction, @Amertume, @PrixUnite, @CollectionID, GETDATE())
+END
 GO
 
-SELECT *
-FROM Archives.ArchiveCollection
+
+GO
+CREATE TRIGGER ProprieteCapsule.CafeLait_dtrgSupprimerCafeLait
+ON ProprieteCapsule.CafeLait
+AFTER DELETE
+AS
+BEGIN
+	DECLARE @CafeLaitID int;
+	DECLARE @CapsuleID int;
+	DECLARE @GoutLait int;
+	DECLARE @TextureCremeuse int;
+
+	SELECT 
+		@CafeLaitID = CafeLaitID,
+		@CapsuleID = CapsuleID,
+		@GoutLait = GoutLait,
+		@TextureCremeuse = TextureCremeuse
+	FROM deleted
+
+	INSERT INTO Archives.ArchiveCafeLait (CafeLaitID, CapsuleID, GoutLait, TextureCremeuse, DateMAJ)
+	VALUES (@CafeLaitID, @CapsuleID, @GoutLait, @TextureCremeuse, GETDATE())
+END
+GO
+
+
+GO
+CREATE TRIGGER ProprieteCapsule.CafeNoir_dtrgSupprimerCafeLait
+ON ProprieteCapsule.CafeNoir
+AFTER DELETE
+AS
+BEGIN
+	DECLARE @CafeNoirID int;
+	DECLARE @CapsuleID int;
+	DECLARE @Intensite int;
+	DECLARE @Torrefaction int;
+	DECLARE @Acidite int;
+	DECLARE @Corps int;
+
+	SELECT
+		@CafeNoirID = CafeNoirID,
+		@CapsuleID = CapsuleID,
+		@Intensite = Intensite,
+		@Torrefaction = Torrefaction,
+		@Acidite = Acidite,
+		@Corps = Corps
+	FROM deleted
+
+	INSERT INTO Archives.ArchiveCafeNoir (CafeNoirID, CapsuleID, Intensite, Torrefaction, Acidite, Corps, DateMAJ)
+	VALUES (@CafeNoirID, @CapsuleID, @Intensite, @Torrefaction, @Acidite, @Corps, GETDATE())
+END
+GO
+
+
+GO
+CREATE TRIGGER ProprieteCapsule.CapsuleTypeCafe_dtrgSupprimerCapsuleTypeCafe
+ON ProprieteCapsule.CapsuleTypeCafe
+AFTER DELETE
+AS
+BEGIN
+	DECLARE @CapsuleTypeCafeID int;
+	DECLARE	@CapsuleID int;
+	DECLARE @TypeCafeID int;
+
+	SELECT 
+		@CapsuleTypeCafeID = CapsuleTypeCafeID,
+		@CapsuleID = CapsuleID,
+		@TypeCafeID = TypeCafeID
+	FROM deleted
+
+	INSERT INTO Archives.ArchiveCapsuleTypeCafe (CapsuleTypeCafeID, CapsuleID, TypeCafeID, DateMAJ)
+	VALUES (@CapsuleTypeCafeID, @CapsuleID, @TypeCafeID, GETDATE())
+END
+GO
+
+GO
+CREATE TRIGGER ProprieteCapsule.TypeCafe_dtrgSupprimerTypeCafe
+ON ProprieteCapsule.TypeCafe
+AFTER DELETE
+AS
+BEGIN
+	DECLARE @TypeCafeID int;
+	DECLARE	@Nom nvarchar(50);
+	DECLARE @Description nvarchar(300);
+	DECLARE @QteML int;
+
+	SELECT 
+		@TypeCafeID = TypeCafeID,
+		@Nom = Nom,
+		@Description = Description,
+		@QteML = QteML
+	FROM deleted
+
+	INSERT INTO Archives.ArchiveTypeCafe (TypeCafeID, Nom, Description, QteML, DateMAJ)
+	VALUES (@TypeCafeID, @Nom, @Description, @QteML, GETDATE())
+END
+GO
+
+
+GO
+CREATE TRIGGER ProprieteCapsule.CapsulePays_dtrgSupprimerCapsulePays
+ON ProprieteCapsule.CapsulePays
+AFTER DELETE
+AS
+BEGIN
+	DECLARE @CapsulePaysID int;
+	DECLARE	@CapsuleID int;
+	DECLARE @PaysID int;
+
+	SELECT 
+		@CapsulePaysID = CapsulePaysID,
+		@CapsuleID = CapsuleID,
+		@PaysID = PaysID
+	FROM deleted
+
+	INSERT INTO Archives.ArchiveCapsulePays (CapsulePaysID, CapsuleID, PaysID, DateMAJ)
+	VALUES (@CapsulePaysID, @CapsuleID, @PaysID, GETDATE())
+END
+GO
+
+GO
+CREATE TRIGGER ProprieteCapsule.Pays_dtrgSupprimerPays
+ON ProprieteCapsule.Pays
+AFTER DELETE
+AS
+BEGIN
+	DECLARE @PaysID int;
+	DECLARE @Nom nvarchar(50);
+	DECLARE @AnneeIntroductionCafe int;
+	DECLARE @HistoireCafe nvarchar(1000);
+
+	SELECT 
+		@PaysID = PaysID,
+		@Nom = Nom,
+		@AnneeIntroductionCafe = AnneeIntroductionCafe,
+		@HistoireCafe = HistoireCafe
+	FROM deleted
+
+	INSERT INTO Archives.ArchivePays (PaysID, Nom, AnneeIntroductionCafe, HistoireCafe, DateMAJ)
+	VALUES (@PaysID, @Nom, @AnneeIntroductionCafe, @HistoireCafe, GETDATE())
+END
+GO
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+------ On test les "trigger" et les "on cascade delete" ---------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+GO
+CREATE OR ALTER PROCEDURE Archives.usp_TestTriggerDelete
+AS
+BEGIN
+
+	-- Ajout Collection
+	INSERT INTO CapsuleNespresso.Collection
+	(Nom, Description)
+	VALUES
+	('Collection Test', 'Petite description...')
+
+	DECLARE @CollectionID int; 
+	SELECT @CollectionID = SCOPE_IDENTITY()
+
+	-- Ajout Capsule
+	INSERT INTO CapsuleNespresso.Capsule
+	(Nom, DescriptionCourte, DescriptionLongue, DescriptionGout, DescriptionTorrefaction, Amertume, PrixUnite, CollectionID)
+	VALUES
+	('Capsule Test', 'Courte Description...', 'Longue Description...', 'Description du Goût...', 'Description de la torréfaction...', 6, 0.97, @CollectionID)
+
+	DECLARE @CapsuleID int;
+	SELECT @CapsuleID = SCOPE_IDENTITY()
+
+	-- Ajout Pays
+	INSERT INTO ProprieteCapsule.Pays
+	(Nom, AnneeIntroductionCafe, HistoireCafe)
+	VALUES
+	('Canada Test', 1734, 'Le café fût emmené sur les terres de la Nouvelle-France par une embarcation Française')
+
+	DECLARE @PaysID int;
+	SELECT @PaysID = SCOPE_IDENTITY()
+
+	-- Ajout TypeCafe
+	INSERT INTO ProprieteCapsule.TypeCafe
+	(Nom, Description, QteML)
+	VALUES
+	('Mocha Test', 'Le parfait mélange entre l''amertume du café et la douceur du chocolat', 240)
+
+	DECLARE @TypeCafeID int;
+	SELECT @TypeCafeID = SCOPE_IDENTITY()
+
+	-- Ajout CapsulePays
+	INSERT INTO ProprieteCapsule.CapsulePays
+	(CapsuleID, PaysID)
+	VALUES
+	(@CapsuleID, @PaysID)
+
+	-- Ajout CapsuleTypeCafe
+	INSERT INTO ProprieteCapsule.CapsuleTypeCafe
+	(CapsuleID, TypeCafeID)
+	VALUES
+	(@CapsuleID, @TypeCafeID)
+
+	-- Ajout CafeLait
+	INSERT INTO ProprieteCapsule.CafeLait
+	(CapsuleID, GoutLait, TextureCremeuse)
+	VALUES
+	(@CapsuleID, 9, 9)
+
+	-- Ajout CafeNoir
+	INSERT INTO ProprieteCapsule.CafeNoir
+	(CapsuleID, Intensite, Torrefaction, Acidite, Corps)
+	VALUES
+	(@CapsuleID, 9, 9, 9, 9)
+
+
+
+	-------------- Supprimer Les tables ----------------
+	DELETE FROM ProprieteCapsule.Pays
+	WHERE PaysID = @PaysID
+	
+	DELETE FROM ProprieteCapsule.TypeCafe
+	WHERE TypeCafeID = @TypeCafeID
+
+	DELETE FROM CapsuleNespresso.Collection
+	WHERE CollectionID = @CollectionID
+
+END
+GO
+
+
+------ Exécution du test -------
+EXEC Archives.usp_TestTriggerDelete
+
+SELECT * FROM Archives.ArchiveCollection
+SELECT * FROM Archives.ArchiveCapsule
+SELECT * FROM Archives.ArchivePays
+SELECT * FROM Archives.ArchiveCapsulePays
+SELECT * FROM Archives.ArchiveTypeCafe
+SELECT * FROM Archives.ArchiveCapsuleTypeCafe
+SELECT * FROM Archives.ArchiveCafeLait
+SELECT * FROM Archives.ArchiveCafeNoir

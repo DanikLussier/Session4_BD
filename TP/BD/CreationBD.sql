@@ -1,3 +1,6 @@
+USE master
+GO
+
 CREATE DATABASE NespressoDB
 GO
 USE NespressoDB;
@@ -17,6 +20,15 @@ CREATE TABLE CapsuleNespresso.Collection(
 	CONSTRAINT PK_Collection_CollectionID PRIMARY KEY (CollectionID)
 )
 
+CREATE TABLE Archives.ArchiveCollection(
+	ArchiveCollectionID int IDENTITY(1,1) NOT NULL,
+	CollectionID int NOT NULL,
+	Nom nvarchar(50) NOT NULL,
+	Description nvarchar(500) NOT NULL,
+	DateMAJ datetime NOT NULL
+	CONSTRAINT PK_ArchiveCollection_ArchiveCollectionID PRIMARY KEY (ArchiveCollectionID)
+)
+
 CREATE TABLE CapsuleNespresso.Capsule(
 	CapsuleID int IDENTITY (1,1) NOT NULL,
 	Nom nvarchar(50) NOT NULL,
@@ -30,11 +42,35 @@ CREATE TABLE CapsuleNespresso.Capsule(
 	CONSTRAINT PK_Capsule_CapsuleID PRIMARY KEY (CapsuleID)
 )
 
+CREATE TABLE Archives.ArchiveCapsule(
+	ArchiveCapsuleID int IDENTITY (1,1) NOT NULL,
+	CapsuleID int NOT NULL,
+	Nom nvarchar(50) NOT NULL,
+	DescriptionCourte nvarchar(300) NOT NULL,
+	DescriptionLongue nvarchar(1500) NOT NULL,
+	DescriptionGout nvarchar(1000) NOT NULL,
+	DescriptionTorrefaction nvarchar(1000) NULL,
+	Amertume int NULL,
+	PrixUnite numeric(4, 2) NOT NULL,
+	CollectionID int NOT NULL,
+	DateMAJ datetime NOT NULL,
+	CONSTRAINT PK_ArchiveCapsule_ArchiveCapsuleID PRIMARY KEY (ArchiveCapsuleID)
+)
+
 CREATE TABLE ProprieteCapsule.CapsuleTypeCafe(
 	CapsuleTypeCafeID int IDENTITY (1,1) NOT NULL,
 	CapsuleID int NOT NULL,
 	TypeCafeID int NOT NULL,
 	CONSTRAINT PK_CapsuleTypeCafe_CapsuleTypeCafeID PRIMARY KEY (CapsuleTypeCafeID)
+)
+
+CREATE TABLE Archives.ArchiveCapsuleTypeCafe(
+	ArchiveCapsuleTypeCafeID int IDENTITY (1,1) NOT NULL,
+	CapsuleTypeCafeID int NOT NULL,
+	CapsuleID int NOT NULL,
+	TypeCafeID int NOT NULL,
+	DateMAJ datetime NOT NULL,
+	CONSTRAINT PK_ArchiveCapsuleTypeCafe_ArchiveCapsuleTypeCafeID PRIMARY KEY (ArchiveCapsuleTypeCafeID)
 )
 
 CREATE TABLE ProprieteCapsule.TypeCafe(
@@ -45,11 +81,30 @@ CREATE TABLE ProprieteCapsule.TypeCafe(
 	CONSTRAINT PK_TypeCafe_TypeCafeID PRIMARY KEY (TypeCafeID)
 )
 
+CREATE TABLE Archives.ArchiveTypeCafe(
+	ArchiveTypeCafeID int IDENTITY (1,1) NOT NULL,
+	TypeCafeID int NOT NULL,
+	Nom nvarchar(50) NOT NULL,
+	Description nvarchar(300) NOT NULL,
+	QteML int NOT NULL,
+	DateMAJ datetime NOT NULL,
+	CONSTRAINT PK_ArchiveTypeCafe_ArchiveTypeCafeID PRIMARY KEY (ArchiveTypeCafeID)
+)
+
 CREATE TABLE ProprieteCapsule.CapsulePays(
 	CapsulePaysID int IDENTITY (1,1) NOT NULL,
 	CapsuleID int NOT NULL,
 	PaysID int NOT NULL,
 	CONSTRAINT PK_CapsulePays_CapsulePaysID PRIMARY KEY (CapsulePaysID)
+)
+
+CREATE TABLE Archives.ArchiveCapsulePays(
+	ArchiveCapsulePaysID int IDENTITY (1,1) NOT NULL,
+	CapsulePaysID int NOT NULL,
+	CapsuleID int NOT NULL,
+	PaysID int NOT NULL,
+	DateMAJ datetime NOT NULL,
+	CONSTRAINT PK_ArchiveCapsulePays_ArchiveCapsulePaysID PRIMARY KEY (ArchiveCapsulePaysID)
 )
 
 CREATE TABLE ProprieteCapsule.Pays(
@@ -58,6 +113,16 @@ CREATE TABLE ProprieteCapsule.Pays(
 	AnneeIntroductionCafe int NOT NULL,
 	HistoireCafe nvarchar(1000) NOT NULL,
 	CONSTRAINT PK_Pays_PaysID PRIMARY KEY (PaysID)
+)
+
+CREATE TABLE Archives.ArchivePays(
+	ArchivePaysID int IDENTITY (1,1) NOT NULL,
+	PaysID int NOT NULL,
+	Nom nvarchar(50) NOT NULL,
+	AnneeIntroductionCafe int NOT NULL,
+	HistoireCafe nvarchar(1000) NOT NULL,
+	DateMAJ datetime NOT NULL,
+	CONSTRAINT PK_ArchivePays_ArchivePaysID PRIMARY KEY (ArchivePaysID)
 )
 
 CREATE TABLE ProprieteCapsule.CafeNoir(
@@ -70,6 +135,18 @@ CREATE TABLE ProprieteCapsule.CafeNoir(
 	CONSTRAINT PK_CafeNoir_CafeNoirID PRIMARY KEY (CafeNoirID)
 )
 
+CREATE TABLE Archives.ArchiveCafeNoir(
+	ArchiveCafeNoirID int IDENTITY (1,1) NOT NULL,
+	CafeNoirID int NOT NULL,
+	CapsuleID int NOT NULL,
+	Intensite int NOT NULL,
+	Torrefaction int NOT NULL,
+	Acidite int NOT NULL,
+	Corps int NOT NULL,
+	DateMAJ datetime NOT NULL,
+	CONSTRAINT PK_ArchiveCafeNoir_ArchiveCafeNoirID PRIMARY KEY (ArchiveCafeNoirID)
+)
+
 CREATE TABLE ProprieteCapsule.CafeLait(
 	CafeLaitID int IDENTITY (1,1) NOT NULL,
 	CapsuleID int NOT NULL,
@@ -78,12 +155,14 @@ CREATE TABLE ProprieteCapsule.CafeLait(
 	CONSTRAINT PK_CafeLait_CafeLaitID PRIMARY KEY (CafeLaitID)
 )
 
-CREATE TABLE Archives.ArchiveCollection(
-	ArchiveCollectionID int IDENTITY(1,1) NOT NULL,
-	CollectionID int NOT NULL,
-	Nom nvarchar(50) NOT NULL,
-	Description nvarchar(500) NOT NULL,
-	DateMAJ datetime NOT NULL
+CREATE TABLE Archives.ArchiveCafeLait(
+	ArchiveCafeLaitID int IDENTITY (1,1) NOT NULL,
+	CafeLaitID int NOT NULL,
+	CapsuleID int NOT NULL,
+	GoutLait int NOT NULL,
+	TextureCremeuse int NOT NULL,
+	DateMAJ datetime NOT NULL,
+	CONSTRAINT PK_ArchiveCafeLait_ArchiveCafeLaitID PRIMARY KEY (ArchiveCafeLaitID)
 )
 
 GO
@@ -92,30 +171,37 @@ GO
 ALTER TABLE CapsuleNespresso.Capsule ADD CONSTRAINT FK_Capsule_CollectionID
 FOREIGN KEY (CollectionID)
 REFERENCES CapsuleNespresso.Collection (CollectionID)
+ON DELETE CASCADE
 
 ALTER TABLE ProprieteCapsule.CapsuleTypeCafe ADD CONSTRAINT FK_CapsuleTypeCafe_CapsuleID
 FOREIGN KEY (CapsuleID)
 REFERENCES CapsuleNespresso.Capsule (CapsuleID)
+ON DELETE CASCADE
 
 ALTER TABLE ProprieteCapsule.CapsuleTypeCafe ADD CONSTRAINT FK_CapsuleTypeCafe_TypeCafeID
 FOREIGN KEY (TypeCafeID)
 REFERENCES ProprieteCapsule.TypeCafe (TypeCafeID)
+ON DELETE CASCADE
 
 ALTER TABLE ProprieteCapsule.CapsulePays ADD CONSTRAINT FK_CapsulePays_CapsuleID
 FOREIGN KEY (CapsuleID)
 REFERENCES CapsuleNespresso.Capsule (CapsuleID)
+ON DELETE CASCADE
 
 ALTER TABLE ProprieteCapsule.CapsulePays ADD CONSTRAINT FK_CapsulePays_PaysID
 FOREIGN KEY (PaysID)
 REFERENCES ProprieteCapsule.Pays (PaysID)
+ON DELETE CASCADE
 
 ALTER TABLE ProprieteCapsule.CafeNoir ADD CONSTRAINT FK_CafeNoir_CapsuleID
 FOREIGN KEY (CapsuleID)
 REFERENCES CapsuleNespresso.Capsule (CapsuleID)
+ON DELETE CASCADE
 
 ALTER TABLE ProprieteCapsule.CafeLait ADD CONSTRAINT FK_CafeLait_CapsuleID
 FOREIGN KEY (CapsuleID)
 REFERENCES CapsuleNespresso.Capsule (CapsuleID)
+ON DELETE CASCADE
 
 
 GO
