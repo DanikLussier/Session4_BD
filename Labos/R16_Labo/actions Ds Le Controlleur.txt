@@ -1,0 +1,48 @@
+--Mettez ceci dans votre le controller Artiste pour faire le code pour les 5 nouvelles vues :
+--C'est définitivement à compléter
+--Vous allez aussi créer une vue pour remplacer le LINQ que vous avez fait pour le Query5 
+
+public async Task<IActionResult> Query1()
+{
+    // Données des employés embauchés en 2023 (Utilisez VwListeArtiste)
+	IEnumerable<VwListeArtiste> artistes = await _context.VwListeArtistes. ..instruction(s) LINQ.. .ToListAsync();
+
+    // N'oubliez pas d'envoyer artistes à la vue Razor ! 
+	return View();
+}
+
+public async Task<IActionResult> Query2()
+{
+    // Données des employés avec la spécialité "modélisation 3D" (Utilisez VwListeArtiste)
+
+    return View();
+}
+
+public async Task<IActionResult> Query3()
+{
+    // Prénom et nom de tous les employés, classés par prénom ascendant
+	// Concaténez prénoms et noms (avec une espace au centre) pour simplement obtenir une liste de strings.
+
+    return View();
+}
+
+public async Task<IActionResult> Query4()
+{
+    // Toutes les données des employés artistes (Sans VwListeArtiste)
+
+    return View();
+}
+
+public async Task<IActionResult> Query5()
+{
+    // Combien d'artistes par spécialité ?
+
+    return View();
+}
+
+public async Task<IActionResult> Query6()
+{
+    // Combien d'artistes par spécialité ?  En utilisant une vue.
+
+    return View();
+}
