@@ -1,0 +1,34 @@
+
+-- Code qui permet de faire la création initiale de la BD avant d'utiliser Evolve. Le script InitialCreate.sql contient déjà ce code.
+
+	IF EXISTS(SELECT * FROM sys.databases WHERE name='S09_Theorie')
+	BEGIN
+    		DROP DATABASE S09_Theorie
+	END
+
+	CREATE DATABASE S09_Theorie
+	GO
+
+----------------------------------------------------
+-- Commandes importantes à faire dans le terminal -- 
+----------------------------------------------------
+
+
+-- Mettre à jour pour la version prerelease qui fonctionne avec .Net 8.0
+
+	dotnet tool update evolve.tool -g --prerelease
+
+
+-- Exécution des migrations
+
+	evolve migrate sqlserver -c "Server=.;Initial Catalog=S09_Theorie;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False" -s Clients -s Comptes --target-version 1.1.1
+
+
+-- Pour générer le Context et les Modèles. 
+
+	dotnet ef dbcontext scaffold Name=S09_Evolve Microsoft.EntityFrameworkCore.SqlServer -o Models --context-dir Data --data-annotations
+
+
+-- Regénération du Context et des Modèles  (avec --force)
+
+	dotnet ef dbcontext scaffold Name=S09_Evolve Microsoft.EntityFrameworkCore.SqlServer -o Models --context-dir Data --data-annotations --force

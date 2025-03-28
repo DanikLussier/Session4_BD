@@ -1,0 +1,8 @@
+IF EXISTS(SELECT * FROM sys.databases WHERE name='S09_Theorie')
+BEGIN
+    DROP DATABASE S09_Theorie
+END
+
+CREATE DATABASE S09_Theorie
+GO
+
