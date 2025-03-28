@@ -16,10 +16,10 @@ public partial class Chanson
     [StringLength(100)]
     public string Nom { get; set; } = null!;
 
-    [StringLength(50)]
-    public string NomChanteur { get; set; } = null!;
+    [Column("ChanteurID")]
+    public int ChanteurId { get; set; }
 
-    [ForeignKey("NomChanteur")]
+    [ForeignKey("ChanteurId")]
     [InverseProperty("Chansons")]
-    public virtual Chanteur NomChanteurNavigation { get; set; } = null!;
+    public virtual Chanteur Chanteur { get; set; } = null!;
 }

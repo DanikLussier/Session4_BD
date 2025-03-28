@@ -9,12 +9,15 @@ namespace S09_Labo.Models;
 [Table("Chanteur", Schema = "Musique")]
 public partial class Chanteur
 {
-    [Key]
     [StringLength(50)]
     public string Nom { get; set; } = null!;
 
     public DateOnly DateNaissance { get; set; }
 
-    [InverseProperty("NomChanteurNavigation")]
+    [Key]
+    [Column("ChanteurID")]
+    public int ChanteurId { get; set; }
+
+    [InverseProperty("Chanteur")]
     public virtual ICollection<Chanson> Chansons { get; set; } = new List<Chanson>();
 }

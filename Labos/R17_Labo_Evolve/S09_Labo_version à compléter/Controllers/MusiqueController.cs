@@ -64,7 +64,7 @@ namespace S09_Labo.Controllers
             }
             // ***** Obtenir la liste des chansons du chanteur (Sera modifié à la migration 1.1 et 1.3)  *******
             // La fouille est basée sur le nom du chanteur au lieu de son id...
-            List<Chanson> chansons = await _context.Chansons.Where(x => x.NomChanteur == chanteur.Nom).ToListAsync();
+            List<Chanson> chansons = await _context.Chansons.Where(x => x.ChanteurId == chanteur.ChanteurId).ToListAsync();
 
             return View(new ChanteurEtSesChansonsViewModel()
             {
