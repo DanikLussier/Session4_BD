@@ -1,0 +1,44 @@
+1) Configurer Filestream (si à la maison)
+
+C:\Windows\SysWOW64
+
+SqlServerManager15.msc
+
+RC sur SQL SERVER SERVICES \ SqlServer (SQLEXPRESS)
+Propriétés
+Onglet FILESTREAM
+Cochez les 2 cases
+
+RC sur SQL SERVER SERVICES \ SqlServer (SQLEXPRESS)  
+restart
+
+
+2) Créer la BD
+
+-- •○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•
+--				Création de la BD
+-- •○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•○•
+
+CREATE DATABASE SussyKart
+GO
+USE SussyKart;
+GO
+
+-- pas d'images
+
+
+2) Installation de Evolve Tool  (si à la maison)
+
+dotnet tool install --global Evolve.Tool 
+
+3) Mettre à jour pour la version prerelease qui fonctionne avec .Net 8.0
+
+dotnet tool update evolve.tool -g --prerelease
+
+3) Migration
+
+evolve migrate sqlserver -c "Data Source=.;Initial Catalog=SussyKart;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False" -s Courses -s Utilisateurs --target-version 2.1
+
+4) Scaffold
+
+dotnet ef dbcontext scaffold Name=SussyKart Microsoft.EntityFrameworkCore.SqlServer -o Models --context R20_LaboContext --context-dir Data --data-annotations --force
