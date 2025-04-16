@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace R20_Labo.Models
 {
     [Table("ParticipationCourse", Schema = "Courses")]
+    [Index("DateParticipation", "Chrono", Name = "IX_ParticipationCourse_DateParticipation_Chrono")]
     public partial class ParticipationCourse
     {
         [Key]

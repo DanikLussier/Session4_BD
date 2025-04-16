@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace R20_Labo.Models
 {
     [Table("Utilisateur", Schema = "Utilisateurs")]
+    [Index("Pseudo", Name = "IX_Utilisateur_Pseudo")]
     [Index("Pseudo", Name = "UC_Utilisateur_Pseudo", IsUnique = true)]
     public partial class Utilisateur
     {

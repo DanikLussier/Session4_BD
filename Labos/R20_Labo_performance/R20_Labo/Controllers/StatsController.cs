@@ -27,20 +27,11 @@ namespace R20_Labo.Controllers
         }
 
         // Section 1 : Compléter ToutesParticipations (Obligatoire)
-        async public Task<IActionResult> ToutesParticipations()
+        public async Task<IActionResult> ToutesParticipations()
         {
             // Obtenir les participations grâce à une vue SQL mais n'obtenez que les 30 premières participations
-            List<VwToutesLesParticipation> participations = await _context.ParticipationCourses.Take(30).Select(p => new VwToutesLesParticipation
-            {
-                UtilisateurId = p.UtilisateurId,
-                Pseudo = p.Utilisateur.Pseudo,
-                CourseId = p.CourseId,
-                Nom = p.Course.Nom,
-                NbJoueurs = p.NbJoueurs,
-                Position = p.Position,
-                Chrono = p.Chrono,
-                DateParticipation = p.DateParticipation
-            }).ToListAsync();
+            List<VwToutesLesParticipation> participations = await _context.VwToutesLesParticipations.Take(30).ToListAsync();
+            
 
             FiltreParticipationVM data = new FiltreParticipationVM
             {
@@ -54,26 +45,16 @@ namespace R20_Labo.Controllers
         {
             // Obtenir TOUTES les participations grâce à une vue SQL (et on va filtrer ensuite)
 
-            List<VwToutesLesParticipation> participations = await _context.ParticipationCourses.Select(p => new VwToutesLesParticipation
-            {
-                UtilisateurId = p.UtilisateurId,
-                Pseudo = p.Utilisateur.Pseudo,
-                CourseId = p.CourseId,
-                Nom = p.Course.Nom,
-                NbJoueurs = p.NbJoueurs,
-                Position = p.Position,
-                Chrono = p.Chrono,
-                DateParticipation = p.DateParticipation
-            }).ToListAsync();
+            IQueryable<VwToutesLesParticipation> participations = _context.VwToutesLesParticipations.AsQueryable();
 
             if (fpvm.Pseudo != null)
             {
-                participations = participations.Where(p => p.Pseudo == fpvm.Pseudo).ToList();
+                participations = participations.Where(p => p.Pseudo == fpvm.Pseudo);
             }
 
             if (fpvm.Course != "Toutes")
             {
-                participations = participations.Where(p => p.Nom == fpvm.Course).ToList();
+                participations = participations.Where(p => p.Nom == fpvm.Course);
             }
 
             // Trier soit par date, soit par chrono (fpvm.Ordre) de manière croissante ou décroissante (fpvm.TypeOrdre)
@@ -81,28 +62,28 @@ namespace R20_Labo.Controllers
             {
                 if (fpvm.Ordre == "Date")
                 {
-                    participations = participations.OrderByDescending(p => p.DateParticipation).ToList();
+                    participations = participations.OrderByDescending(p => p.DateParticipation);
                 }
                 else if (fpvm.Ordre == "Chrono")
                 {
-                    participations = participations.OrderByDescending(p => p.Chrono).ToList();
+                    participations = participations.OrderByDescending(p => p.Chrono);
                 }
             } else
             {
                 if (fpvm.Ordre == "Date")
                 {
-                    participations = participations.OrderBy(p => p.DateParticipation).ToList();
+                    participations = participations.OrderBy(p => p.DateParticipation);
                 }
                 else if (fpvm.Ordre == "Chrono")
                 {
-                    participations = participations.OrderBy(p => p.Chrono).ToList();
+                    participations = participations.OrderBy(p => p.Chrono);
                 }
             }
 
             // Sauter des paquets de 30 participations si la page est supérieure à 1
-            participations = participations.Skip((fpvm.Page - 1)*30).Take(30).ToList();
+            participations = participations.Skip((fpvm.Page - 1)*30).Take(30);
 
-            fpvm.VWParticipations = participations;
+            fpvm.VWParticipations = await participations.ToListAsync();
 
             return View("ToutesParticipations", fpvm);
         }

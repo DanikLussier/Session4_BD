@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace R20_Labo.Models
 {
     [Table("Course", Schema = "Courses")]
+    [Index("Nom", Name = "IX_Course_Nom")]
     [Index("Nom", Name = "UC_Course_Nom", IsUnique = true)]
     public partial class Course
     {

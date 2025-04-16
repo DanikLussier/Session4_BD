@@ -41,4 +41,4 @@ evolve migrate sqlserver -c "Data Source=.;Initial Catalog=SussyKart;Integrated 
 
 4) Scaffold
 
-dotnet ef dbcontext scaffold Name=SussyKart Microsoft.EntityFrameworkCore.SqlServer -o Models --context R20_LaboContext --context-dir Data --data-annotations --force
+dotnet ef dbcontext scaffold Name=SussyKart Microsoft.EntityFrameworkCore.SqlServer -o Models --context SussyKartContext --context-dir Data --data-annotations --force

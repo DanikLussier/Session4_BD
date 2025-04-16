@@ -7,7 +7,7 @@ namespace R20_Labo.ViewModels
     public class FiltreParticipationVM
     {
         // Ajoutez une List<Votre_Vue_SQL> ici !
-        public List<VwToutesLesParticipation> VWParticipations { get; set; } = new List<VwToutesLesParticipation>();
+        public List<VwToutesLesParticipation> VWParticipations { get; set; } = null!;
 		
         public string Course { get; set; } = "Toutes";
 

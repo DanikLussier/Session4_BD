@@ -21,6 +21,7 @@ namespace R20_Labo.Data
         public virtual DbSet<Course> Courses { get; set; } = null!;
         public virtual DbSet<ParticipationCourse> ParticipationCourses { get; set; } = null!;
         public virtual DbSet<Utilisateur> Utilisateurs { get; set; } = null!;
+        public virtual DbSet<VwToutesLesParticipation> VwToutesLesParticipations { get; set; } = null!;
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -49,6 +50,11 @@ namespace R20_Labo.Data
                     .HasForeignKey(d => d.UtilisateurId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_ParticipationCourse_UtilisateurID");
+            });
+
+            modelBuilder.Entity<VwToutesLesParticipation>(entity =>
+            {
+                entity.ToView("vw_toutesLesParticipations", "Courses");
             });
 
             OnModelCreatingPartial(modelBuilder);
