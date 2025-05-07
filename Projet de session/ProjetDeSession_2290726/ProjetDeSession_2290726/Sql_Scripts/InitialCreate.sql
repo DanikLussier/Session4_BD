@@ -1,0 +1,25 @@
+﻿USE MASTER;
+GO
+
+--IF EXISTS(SELECT * FROM sys.databases WHERE name='Nespresso')
+--BEGIN
+--	DROP DATABASE Nespresso
+--END
+CREATE DATABASE Nespresso
+GO
+
+USE Nespresso
+GO
+
+EXEC sp_configure filestream_access_level, 2 RECONFIGURE
+
+ALTER DATABASE Nespresso
+ADD FILEGROUP FG_Images_2290726 CONTAINS FILESTREAM;
+GO
+ALTER DATABASE Nespresso
+ADD FILE (
+	NAME = FG_Images_2290726,
+	FILENAME = 'C:\EspaceLabo\FG_Images_2290726'
+)
+TO FILEGROUP FG_Images_2290726
+GO

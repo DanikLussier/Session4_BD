@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\sql_scripts\\v1_0__musicienmusique.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|solutionrelative:sql_scripts\\v1_0__musicienmusique.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|solutionrelative:sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\controllers\\utilisateurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|solutionrelative:controllers\\utilisateurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -29,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\sql_scripts\\dotnet et evolve commandes pour s09_labo.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|solutionrelative:sql_scripts\\dotnet et evolve commandes pour s09_labo.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|solutionrelative:sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\sql_scripts\\v1_0__musicienmusique.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|solutionrelative:sql_scripts\\v1_0__musicienmusique.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -113,6 +113,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\viewmodels\\chanteuretseschansonsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|solutionrelative:viewmodels\\chanteuretseschansonsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|solutionrelative:sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r18_s09 partie 2 labo depart\\s09_labo\\sql_scripts\\v1_0__musicienmusique.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{AD7C45A3-DBB6-403C-90F9-5EEBC2B42AEB}|S09_Labo.csproj|solutionrelative:sql_scripts\\v1_0__musicienmusique.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,11 +130,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Profil.cshtml",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Views\\Utilisateurs\\Profil.cshtml",
               "RelativeDocumentMoniker": "Views\\Utilisateurs\\Profil.cshtml",
@@ -138,7 +146,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "S09_Labo.csproj",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\S09_Labo.csproj",
               "RelativeDocumentMoniker": "S09_Labo.csproj",
@@ -150,18 +158,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InitialCreate.sql",
+              "DocumentIndex": 1,
+              "Title": "InitialCreate.sql ",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Sql_Scripts\\InitialCreate.sql",
               "RelativeDocumentMoniker": "Sql_Scripts\\InitialCreate.sql",
               "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Sql_Scripts\\InitialCreate.sql",
               "RelativeToolTip": "Sql_Scripts\\InitialCreate.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-11-27T20:25:56.829Z"
+              "WhenOpened": "2024-11-27T20:25:56.829Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DotNet et Evolve Commandes pour S09_Labo.txt",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Sql_Scripts\\DotNet et Evolve Commandes pour S09_Labo.txt",
               "RelativeDocumentMoniker": "Sql_Scripts\\DotNet et Evolve Commandes pour S09_Labo.txt",
@@ -173,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "V1_4__Utilisateurs.sql",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Sql_Scripts\\V1_4__Utilisateurs.sql",
               "RelativeDocumentMoniker": "Sql_Scripts\\V1_4__Utilisateurs.sql",
@@ -184,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "UtilisateursController.cs",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Controllers\\UtilisateursController.cs",
               "RelativeDocumentMoniker": "Controllers\\UtilisateursController.cs",
@@ -197,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -209,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MusiqueController.cs",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Controllers\\MusiqueController.cs",
               "RelativeDocumentMoniker": "Controllers\\MusiqueController.cs",
@@ -221,14 +230,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "V1_0__MusicienMusique.sql",
+              "DocumentIndex": 0,
+              "Title": "V1_0__MusicienMusique.sql ",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Sql_Scripts\\V1_0__MusicienMusique.sql",
               "RelativeDocumentMoniker": "Sql_Scripts\\V1_0__MusicienMusique.sql",
               "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R18_S09 Partie 2 Labo Depart\\S09_Labo\\Sql_Scripts\\V1_0__MusicienMusique.sql",
               "RelativeToolTip": "Sql_Scripts\\V1_0__MusicienMusique.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-11-27T20:25:48.177Z"
+              "WhenOpened": "2024-11-27T20:25:48.177Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

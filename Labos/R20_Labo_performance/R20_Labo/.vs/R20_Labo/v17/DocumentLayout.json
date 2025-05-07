@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r20_labo_performance\\r20_labo\\sql_scripts\\v1_0__tables.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|solutionrelative:sql_scripts\\v1_0__tables.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r20_labo_performance\\r20_labo\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|solutionrelative:sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r20_labo_performance\\r20_labo\\sql_scripts\\script preparation labo20.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|solutionrelative:sql_scripts\\script preparation labo20.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -31,12 +39,12 @@
       "RelativeMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|solutionrelative:sql_scripts\\v2_0__vw_touteslesparticipations.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r20_labo_performance\\r20_labo\\sql_scripts\\v2_0__vw_touteslesparticipations.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|solutionrelative:sql_scripts\\v2_0__vw_touteslesparticipations.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r20_labo_performance\\r20_labo\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|solutionrelative:sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r20_labo_performance\\r20_labo\\sql_scripts\\v2_1__index.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|solutionrelative:sql_scripts\\v2_1__index.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\r20_labo_performance\\r20_labo\\sql_scripts\\v1_0__tables.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{76D8D56E-A756-4F54-A5E6-8EC3E3D0DFDC}|R20_Labo.csproj|solutionrelative:sql_scripts\\v1_0__tables.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +54,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "V1_0__Tables.sql ",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\V1_0__Tables.sql",
+              "RelativeDocumentMoniker": "Sql_Scripts\\V1_0__Tables.sql",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\V1_0__Tables.sql",
+              "RelativeToolTip": "Sql_Scripts\\V1_0__Tables.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-07T19:00:22.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "InitialCreate.sql ",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\InitialCreate.sql",
+              "RelativeDocumentMoniker": "Sql_Scripts\\InitialCreate.sql",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\InitialCreate.sql",
+              "RelativeToolTip": "Sql_Scripts\\InitialCreate.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-07T17:14:56.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "FiltreParticipationVM.cs",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\ViewModels\\FiltreParticipationVM.cs",
               "RelativeDocumentMoniker": "ViewModels\\FiltreParticipationVM.cs",
@@ -58,37 +90,35 @@
               "RelativeToolTip": "ViewModels\\FiltreParticipationVM.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T18:52:11.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T18:52:11.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Script Preparation Labo20.txt",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\Script Preparation Labo20.txt",
               "RelativeDocumentMoniker": "Sql_Scripts\\Script Preparation Labo20.txt",
               "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\Script Preparation Labo20.txt",
               "RelativeToolTip": "Sql_Scripts\\Script Preparation Labo20.txt",
-              "ViewState": "AQIAABQAAAAAAAAAAAAiwCsAAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAYwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2025-04-16T16:10:04.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "V2_1__Index.sql ",
+              "DocumentIndex": 6,
+              "Title": "V2_1__Index.sql",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\V2_1__Index.sql",
               "RelativeDocumentMoniker": "Sql_Scripts\\V2_1__Index.sql",
               "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\V2_1__Index.sql",
               "RelativeToolTip": "Sql_Scripts\\V2_1__Index.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-04-16T18:27:57.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T18:27:57.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "StatsController.cs",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Controllers\\StatsController.cs",
               "RelativeDocumentMoniker": "Controllers\\StatsController.cs",
@@ -96,12 +126,11 @@
               "RelativeToolTip": "Controllers\\StatsController.cs",
               "ViewState": "AQIAAC0AAAAAAAAAAAAuwC8AAABkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T01:35:51.524Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T01:35:51.524Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "VwToutesLesParticipation.cs",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Models\\VwToutesLesParticipation.cs",
               "RelativeDocumentMoniker": "Models\\VwToutesLesParticipation.cs",
@@ -109,12 +138,11 @@
               "RelativeToolTip": "Models\\VwToutesLesParticipation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-16T16:51:24.486Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:51:24.486Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "ToutesParticipations.cshtml",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Views\\Stats\\ToutesParticipations.cshtml",
               "RelativeDocumentMoniker": "Views\\Stats\\ToutesParticipations.cshtml",
@@ -122,20 +150,18 @@
               "RelativeToolTip": "Views\\Stats\\ToutesParticipations.cshtml",
               "ViewState": "AQIAAFwAAAAAAAAAAAAYwIUAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T01:51:07.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T01:51:07.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "V2_0__VW_toutesLesParticipations.sql ",
+              "DocumentIndex": 8,
+              "Title": "V2_0__VW_toutesLesParticipations.sql",
               "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\V2_0__VW_toutesLesParticipations.sql",
               "RelativeDocumentMoniker": "Sql_Scripts\\V2_0__VW_toutesLesParticipations.sql",
               "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R20_Labo_performance\\R20_Labo\\Sql_Scripts\\V2_0__VW_toutesLesParticipations.sql",
               "RelativeToolTip": "Sql_Scripts\\V2_0__VW_toutesLesParticipations.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-04-16T16:18:15.588Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-16T16:18:15.588Z"
             }
           ]
         }

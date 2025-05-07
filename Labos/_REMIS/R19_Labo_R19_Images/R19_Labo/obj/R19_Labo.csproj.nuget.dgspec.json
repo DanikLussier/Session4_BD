@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R19_Labo_R19_Images\\R19_Labo\\R19_Labo.csproj": {}
+    "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\_REMIS\\R19_Labo_R19_Images\\R19_Labo\\R19_Labo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R19_Labo_R19_Images\\R19_Labo\\R19_Labo.csproj": {
+    "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\_REMIS\\R19_Labo_R19_Images\\R19_Labo\\R19_Labo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R19_Labo_R19_Images\\R19_Labo\\R19_Labo.csproj",
+        "projectUniqueName": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\_REMIS\\R19_Labo_R19_Images\\R19_Labo\\R19_Labo.csproj",
         "projectName": "R19_Labo",
-        "projectPath": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R19_Labo_R19_Images\\R19_Labo\\R19_Labo.csproj",
+        "projectPath": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\_REMIS\\R19_Labo_R19_Images\\R19_Labo\\R19_Labo.csproj",
         "packagesPath": "C:\\Users\\2290726\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\R19_Labo_R19_Images\\R19_Labo\\obj\\",
+        "outputPath": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\_REMIS\\R19_Labo_R19_Images\\R19_Labo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
