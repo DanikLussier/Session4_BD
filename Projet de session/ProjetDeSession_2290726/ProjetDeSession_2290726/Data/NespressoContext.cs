@@ -50,6 +50,8 @@ public partial class NespressoContext : DbContext
 
     public virtual DbSet<TypeCafe> TypeCaves { get; set; }
 
+    public virtual DbSet<Utilisateur> Utilisateurs { get; set; }
+
     public virtual DbSet<VwNbCapsulesDuBresilParCollection> VwNbCapsulesDuBresilParCollections { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -158,6 +160,11 @@ public partial class NespressoContext : DbContext
         modelBuilder.Entity<TypeCafe>(entity =>
         {
             entity.HasKey(e => e.TypeCafeId).HasName("PK_TypeCafe_TypeCafeID");
+        });
+
+        modelBuilder.Entity<Utilisateur>(entity =>
+        {
+            entity.HasKey(e => e.UtilisateurId).HasName("PK_Utilisateur_UtilisateurID");
         });
 
         modelBuilder.Entity<VwNbCapsulesDuBresilParCollection>(entity =>
