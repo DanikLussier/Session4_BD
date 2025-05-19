@@ -1,0 +1,63 @@
+﻿@model ProjetDeSession_2290726.Models.Capsule
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Capsule</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nom" class="control-label"></label>
+                <input asp-for="Nom" class="form-control" />
+                <span asp-validation-for="Nom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescriptionCourte" class="control-label"></label>
+                <input asp-for="DescriptionCourte" class="form-control" />
+                <span asp-validation-for="DescriptionCourte" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescriptionLongue" class="control-label"></label>
+                <input asp-for="DescriptionLongue" class="form-control" />
+                <span asp-validation-for="DescriptionLongue" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescriptionGout" class="control-label"></label>
+                <input asp-for="DescriptionGout" class="form-control" />
+                <span asp-validation-for="DescriptionGout" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DescriptionTorrefaction" class="control-label"></label>
+                <input asp-for="DescriptionTorrefaction" class="form-control" />
+                <span asp-validation-for="DescriptionTorrefaction" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Amertume" class="control-label"></label>
+                <input asp-for="Amertume" class="form-control" />
+                <span asp-validation-for="Amertume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CollectionId" class="control-label"></label>
+                <select asp-for="CollectionId" class ="form-control" asp-items="ViewBag.CollectionId"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

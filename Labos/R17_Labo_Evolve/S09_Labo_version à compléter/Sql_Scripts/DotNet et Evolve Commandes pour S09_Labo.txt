@@ -17,7 +17,7 @@ dotnet ef dbcontext scaffold Name=S09_Labo Microsoft.EntityFrameworkCore.SqlServ
 dotnet tool update evolve.tool -g --prerelease
 
 -- Exécution des migrations
-evolve migrate sqlserver -c "Server=.;Initial Catalog=S09_Labo;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False" -s Musique -s Utilisateurs --target-version 1.0
+evolve migrate sqlserver -c "Server=.;Initial Catalog=Nespresso;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=False" -s CapsuleNespresso -s ProprieteCapsule -s Archives --target-version 1.1
 
 
 

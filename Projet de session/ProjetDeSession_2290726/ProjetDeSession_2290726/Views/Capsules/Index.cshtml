@@ -1,0 +1,78 @@
+﻿@model IEnumerable<ProjetDeSession_2290726.Models.Capsule>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescriptionCourte)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescriptionLongue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescriptionGout)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DescriptionTorrefaction)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Amertume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrixUnite)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Collection)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescriptionCourte)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescriptionLongue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescriptionGout)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescriptionTorrefaction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amertume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrixUnite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Collection.CollectionId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CapsuleId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CapsuleId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CapsuleId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
