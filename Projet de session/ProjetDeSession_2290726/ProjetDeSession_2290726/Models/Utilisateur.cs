@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ProjetDeSession_2290726.Models;
 
 [Table("Utilisateur", Schema = "Utilisateurs")]
+[Index("Pseudo", Name = "IX_Utilisateur_Pseudo")]
 public partial class Utilisateur
 {
     [Key]

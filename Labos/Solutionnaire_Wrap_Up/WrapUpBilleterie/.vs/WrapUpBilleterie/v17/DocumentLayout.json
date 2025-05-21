@@ -1,0 +1,81 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\Solutionnaire_Wrap_Up\\WrapUpBilleterie\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\solutionnaire_wrap_up\\wrapupbilleterie\\sql_scripts\\v1_3__ajoutertableaffiche.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|solutionrelative:sql_scripts\\v1_3__ajoutertableaffiche.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\solutionnaire_wrap_up\\wrapupbilleterie\\sql_scripts\\script preparation labo22.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|solutionrelative:sql_scripts\\script preparation labo22.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\solutionnaire_wrap_up\\wrapupbilleterie\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|solutionrelative:sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\solutionnaire_wrap_up\\wrapupbilleterie\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|solutionrelative:sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\solutionnaire_wrap_up\\wrapupbilleterie\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame",
+      "RelativeMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|solutionrelative:sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|c:\\users\\2290726\\desktop\\session4_bd\\labos\\solutionnaire_wrap_up\\wrapupbilleterie\\sql_scripts\\v1_3__ajoutertableaffiche.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{277352AE-ECB7-4617-8F4E-96A87559E319}|WrapUpBilleterie.csproj|solutionrelative:sql_scripts\\v1_3__ajoutertableaffiche.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "V1_3__AjouterTableAffiche.sql ",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\Solutionnaire_Wrap_Up\\WrapUpBilleterie\\Sql_Scripts\\V1_3__AjouterTableAffiche.sql",
+              "RelativeDocumentMoniker": "Sql_Scripts\\V1_3__AjouterTableAffiche.sql",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\Solutionnaire_Wrap_Up\\WrapUpBilleterie\\Sql_Scripts\\V1_3__AjouterTableAffiche.sql",
+              "RelativeToolTip": "Sql_Scripts\\V1_3__AjouterTableAffiche.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-21T16:40:02.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Script Preparation Labo22.txt",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\Solutionnaire_Wrap_Up\\WrapUpBilleterie\\Sql_Scripts\\Script Preparation Labo22.txt",
+              "RelativeDocumentMoniker": "Sql_Scripts\\Script Preparation Labo22.txt",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\Solutionnaire_Wrap_Up\\WrapUpBilleterie\\Sql_Scripts\\Script Preparation Labo22.txt",
+              "RelativeToolTip": "Sql_Scripts\\Script Preparation Labo22.txt",
+              "ViewState": "AQIAABcAAAAAAAAAAAAYwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-21T16:36:59.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InitialCreate.sql ",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\Solutionnaire_Wrap_Up\\WrapUpBilleterie\\Sql_Scripts\\InitialCreate.sql",
+              "RelativeDocumentMoniker": "Sql_Scripts\\InitialCreate.sql",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Labos\\Solutionnaire_Wrap_Up\\WrapUpBilleterie\\Sql_Scripts\\InitialCreate.sql",
+              "RelativeToolTip": "Sql_Scripts\\InitialCreate.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-21T16:36:55.752Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

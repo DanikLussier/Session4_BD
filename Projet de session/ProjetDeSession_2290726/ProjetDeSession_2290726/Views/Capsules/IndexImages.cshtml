@@ -1,0 +1,43 @@
+﻿@model ViewModels.IndexImageViewModel
+
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Images</h1>
+
+<p>
+    <a asp-action="CreateImage">Create new image</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NomsCompagnies)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PhotosCompagnies)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@for (int i = 0; i < Model.NomsCompagnies.Count; i++) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Model.NomsCompagnies[i])
+            </td>
+            <td>
+                    @if (Model.PhotosCompagnies[i] == null)
+                    {
+                        <img src="/images/placeholder.png" />
+                    }
+                    else
+                    {
+                        <img src="@Model.PhotosCompagnies[i]" />
+                    }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

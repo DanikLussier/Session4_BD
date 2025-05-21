@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 namespace ProjetDeSession_2290726.Models;
 
 [Table("Capsule", Schema = "CapsuleNespresso")]
+[Index("Nom", Name = "IX_Capsule_Nom")]
 [Index("Nom", Name = "UC_Capsule_Nom", IsUnique = true)]
 public partial class Capsule
 {

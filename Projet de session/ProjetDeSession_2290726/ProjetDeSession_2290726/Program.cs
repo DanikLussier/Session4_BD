@@ -33,7 +33,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Capsules}/{action=IndexVue}"
+    pattern: "{controller=Capsules}/{action=Index}"
 );
 
 app.MapRazorPages();

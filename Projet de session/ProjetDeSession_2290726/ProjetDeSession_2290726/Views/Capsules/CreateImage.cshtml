@@ -1,0 +1,39 @@
+﻿@model ViewModels.ImageUploadViewModel
+
+@{
+    ViewData["Title"] = "CreateImage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>CreateImage</h1>
+
+<h4>Compagnie</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AjouterImage" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomImage" class="control-label"></label>
+                <input asp-for="NomImage" class="form-control" />
+                <span asp-validation-for="NomImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label for="FormFile">Fichier Image : </label>
+                <input id="FormFile" name="FormFile" type="file" accept="image/*" class="form-control-file" />
+                <span asp-validation-for="FormFile" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

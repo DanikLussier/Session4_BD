@@ -3,60 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\viewmodels\\connexionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\viewmodels\\connexionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\v1_6__performance.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\v1_6__performance.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\views\\capsules\\createimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\views\\capsules\\createimage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\views\\capsules\\indeximages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\views\\capsules\\indeximages.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\controllers\\capsulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\controllers\\capsulescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\controllers\\utilisateurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\controllers\\utilisateurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\viewmodels\\indeximageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\viewmodels\\indeximageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\models\\utilisateur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\viewmodels\\imageuploadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\viewmodels\\imageuploadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\v1_3__utilisateurs.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\v1_3__utilisateurs.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\views\\utilisateurs\\connexion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\views\\utilisateurs\\connexion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\views\\utilisateurs\\inscription.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\views\\utilisateurs\\inscription.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\v1_0__tables.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\v1_0__tables.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\data\\nespressocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\data\\nespressocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\v1_1__insertiondonnees.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\v1_1__insertiondonnees.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\models\\vwnbcapsulesdubresilparcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\models\\vwnbcapsulesdubresilparcollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\v1_2__creationvue.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
       "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\v1_2__creationvue.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\v1_2__creationvue.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\v1_2__creationvue.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\initialcreate.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\v1_3__utilisateurs.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\v1_3__utilisateurs.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\v1_0__tables.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
-      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\v1_0__tables.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+      "AbsoluteMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|c:\\users\\2290726\\desktop\\session4_bd\\projet de session\\projetdesession_2290726\\projetdesession_2290726\\sql_scripts\\v1_6__performance.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{9CCA3979-4642-4037-8626-08A03D178689}|ProjetDeSession_2290726\\ProjetDeSession_2290726.csproj|solutionrelative:projetdesession_2290726\\sql_scripts\\v1_6__performance.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -71,136 +67,143 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ConnexionViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\ViewModels\\ConnexionViewModel.cs",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\ViewModels\\ConnexionViewModel.cs",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\ViewModels\\ConnexionViewModel.cs",
-              "RelativeToolTip": "ProjetDeSession_2290726\\ViewModels\\ConnexionViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T16:10:17.5Z",
+              "Title": "V1_6__Performance.sql ",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_6__Performance.sql",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Sql_Scripts\\V1_6__Performance.sql",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_6__Performance.sql",
+              "RelativeToolTip": "ProjetDeSession_2290726\\Sql_Scripts\\V1_6__Performance.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-21T20:39:07.908Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UtilisateursController.cs",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Controllers\\UtilisateursController.cs",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Controllers\\UtilisateursController.cs",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Controllers\\UtilisateursController.cs",
-              "RelativeToolTip": "ProjetDeSession_2290726\\Controllers\\UtilisateursController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAQwAoAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T16:07:51.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Utilisateur.cs",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Models\\Utilisateur.cs",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Models\\Utilisateur.cs",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Models\\Utilisateur.cs",
-              "RelativeToolTip": "ProjetDeSession_2290726\\Models\\Utilisateur.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T16:05:24.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "V1_3__Utilisateurs.sql ",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_3__Utilisateurs.sql",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Sql_Scripts\\V1_3__Utilisateurs.sql",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_3__Utilisateurs.sql",
-              "RelativeToolTip": "ProjetDeSession_2290726\\Sql_Scripts\\V1_3__Utilisateurs.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-19T15:01:24.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "V1_2__CreationVue.sql",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_2__CreationVue.sql",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Sql_Scripts\\V1_2__CreationVue.sql",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_2__CreationVue.sql",
-              "RelativeToolTip": "ProjetDeSession_2290726\\Sql_Scripts\\V1_2__CreationVue.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-07T19:07:48.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Program.cs",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Program.cs",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Program.cs",
-              "RelativeToolTip": "ProjetDeSession_2290726\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T18:53:33.859Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\appsettings.json",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\appsettings.json",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\appsettings.json",
-              "RelativeToolTip": "ProjetDeSession_2290726\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-07T18:44:04.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "V1_1__InsertionDonnees.sql",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_1__InsertionDonnees.sql",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Sql_Scripts\\V1_1__InsertionDonnees.sql",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_1__InsertionDonnees.sql",
-              "RelativeToolTip": "ProjetDeSession_2290726\\Sql_Scripts\\V1_1__InsertionDonnees.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-07T17:25:17.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "V1_0__Tables.sql ",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_0__Tables.sql",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Sql_Scripts\\V1_0__Tables.sql",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_0__Tables.sql",
-              "RelativeToolTip": "ProjetDeSession_2290726\\Sql_Scripts\\V1_0__Tables.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-07T17:22:07.274Z",
+              "Title": "CreateImage.cshtml",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Views\\Capsules\\CreateImage.cshtml",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Views\\Capsules\\CreateImage.cshtml",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Views\\Capsules\\CreateImage.cshtml",
+              "RelativeToolTip": "ProjetDeSession_2290726\\Views\\Capsules\\CreateImage.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T20:37:30.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "InitialCreate.sql ",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\InitialCreate.sql",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Sql_Scripts\\InitialCreate.sql",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\InitialCreate.sql",
-              "RelativeToolTip": "ProjetDeSession_2290726\\Sql_Scripts\\InitialCreate.sql",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-07T17:13:57.054Z",
+              "Title": "IndexImageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\ViewModels\\IndexImageViewModel.cs",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\ViewModels\\IndexImageViewModel.cs",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\ViewModels\\IndexImageViewModel.cs",
+              "RelativeToolTip": "ProjetDeSession_2290726\\ViewModels\\IndexImageViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:36:12.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ImageUploadViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\ViewModels\\ImageUploadViewModel.cs",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\ViewModels\\ImageUploadViewModel.cs",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\ViewModels\\ImageUploadViewModel.cs",
+              "RelativeToolTip": "ProjetDeSession_2290726\\ViewModels\\ImageUploadViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:36:10.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IndexImages.cshtml",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Views\\Capsules\\IndexImages.cshtml",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Views\\Capsules\\IndexImages.cshtml",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Views\\Capsules\\IndexImages.cshtml",
+              "RelativeToolTip": "ProjetDeSession_2290726\\Views\\Capsules\\IndexImages.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T20:35:45.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "NespressoContext.cs",
-              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Data\\NespressoContext.cs",
-              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Data\\NespressoContext.cs",
-              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Data\\NespressoContext.cs",
-              "RelativeToolTip": "ProjetDeSession_2290726\\Data\\NespressoContext.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "Connexion.cshtml",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Views\\Utilisateurs\\Connexion.cshtml",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Views\\Utilisateurs\\Connexion.cshtml",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Views\\Utilisateurs\\Connexion.cshtml",
+              "RelativeToolTip": "ProjetDeSession_2290726\\Views\\Utilisateurs\\Connexion.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T20:31:42.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UtilisateursController.cs",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Controllers\\UtilisateursController.cs",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Controllers\\UtilisateursController.cs",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Controllers\\UtilisateursController.cs",
+              "RelativeToolTip": "ProjetDeSession_2290726\\Controllers\\UtilisateursController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T13:33:50.819Z"
+              "WhenOpened": "2025-05-21T20:30:31.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CapsulesController.cs",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Controllers\\CapsulesController.cs",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Controllers\\CapsulesController.cs",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Controllers\\CapsulesController.cs",
+              "RelativeToolTip": "ProjetDeSession_2290726\\Controllers\\CapsulesController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA0wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:28:54.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Inscription.cshtml",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Views\\Utilisateurs\\Inscription.cshtml",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Views\\Utilisateurs\\Inscription.cshtml",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Views\\Utilisateurs\\Inscription.cshtml",
+              "RelativeToolTip": "ProjetDeSession_2290726\\Views\\Utilisateurs\\Inscription.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAIwAcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-21T20:31:49.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VwNbCapsulesDuBresilParCollection.cs",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Models\\VwNbCapsulesDuBresilParCollection.cs",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Models\\VwNbCapsulesDuBresilParCollection.cs",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Models\\VwNbCapsulesDuBresilParCollection.cs",
+              "RelativeToolTip": "ProjetDeSession_2290726\\Models\\VwNbCapsulesDuBresilParCollection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:28:24.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "V1_2__CreationVue.sql ",
+              "DocumentMoniker": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_2__CreationVue.sql",
+              "RelativeDocumentMoniker": "ProjetDeSession_2290726\\Sql_Scripts\\V1_2__CreationVue.sql",
+              "ToolTip": "C:\\Users\\2290726\\Desktop\\Session4_BD\\Projet de session\\ProjetDeSession_2290726\\ProjetDeSession_2290726\\Sql_Scripts\\V1_2__CreationVue.sql",
+              "RelativeToolTip": "ProjetDeSession_2290726\\Sql_Scripts\\V1_2__CreationVue.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-21T20:28:11.576Z",
+              "EditorCaption": ""
             }
           ]
         }

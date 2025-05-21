@@ -46,6 +46,8 @@ public partial class NespressoContext : DbContext
 
     public virtual DbSet<Collection> Collections { get; set; }
 
+    public virtual DbSet<Compagnie> Compagnies { get; set; }
+
     public virtual DbSet<Pay> Pays { get; set; }
 
     public virtual DbSet<TypeCafe> TypeCaves { get; set; }
@@ -142,7 +144,7 @@ public partial class NespressoContext : DbContext
 
         modelBuilder.Entity<Changelog>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83FEB19F40E");
+            entity.HasKey(e => e.Id).HasName("PK__changelo__3213E83F8E28D2E4");
 
             entity.Property(e => e.InstalledOn).HasDefaultValueSql("(getdate())");
         });
@@ -150,6 +152,13 @@ public partial class NespressoContext : DbContext
         modelBuilder.Entity<Collection>(entity =>
         {
             entity.HasKey(e => e.CollectionId).HasName("PK_Collection_CollectionID");
+        });
+
+        modelBuilder.Entity<Compagnie>(entity =>
+        {
+            entity.HasKey(e => e.CompagnieId).HasName("PK_Compagnie_CompagnieID");
+
+            entity.Property(e => e.Identifiant).HasDefaultValueSql("(newid())");
         });
 
         modelBuilder.Entity<Pay>(entity =>

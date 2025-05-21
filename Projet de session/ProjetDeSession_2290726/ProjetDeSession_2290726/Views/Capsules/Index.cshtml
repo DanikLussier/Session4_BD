@@ -1,47 +1,98 @@
-﻿@model IEnumerable<ProjetDeSession_2290726.Models.Capsule>
+﻿@model ViewModels.FiltreCapsuleViewModel
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Bonjour @ViewData["utilisateur"]!</h1>
 
+<a asp-action="Connexion" asp-controller="Utilisateurs">Connexion</a>
+<a asp-action="Inscription" asp-controller="Utilisateurs">Inscription</a>
+<a asp-action="Deconnexion" asp-controller="Utilisateurs">Deconnexion</a>
+
+<p>
+    <a asp-action="IndexImages">Images</a>
+</p>
+
+<p>
+    <a asp-action="IndexVue">Index de la vue</a>
+</p>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+@if (ViewData["utilisateur"]!.ToString() != "Visiteur")
+{
+    <form asp-action="IndexFiltre">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="row">
+            <div class="form-group col-6">
+                <label asp-for="Name" class="control-label"></label>
+                <div>
+                    <input asp-for="Name" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group col-3">
+                <label asp-for="AmertumeMin" class="control-label"></label>
+                <div>
+                    <input asp-for="AmertumeMin" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group col-3">
+                <label asp-for="AmertumeMax" class="control-label"></label>
+                <div>
+                    <input asp-for="AmertumeMax" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group col-3">
+                <label asp-for="PrixUniteMax" class="control-label"></label>
+                <div>
+                    <input asp-for="PrixUniteMax" class="form-control" />
+                </div>
+            </div>
+            <div class="form-group col-auto">
+                <div class="col-md-offset-2">
+                    <button type="submit" class="btn btn-light">Filtrer</button>
+                </div>
+            </div>
+        </div>
+    </form>
+}
+
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nom)
+                Nom
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DescriptionCourte)
+                Description Courte
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DescriptionLongue)
+                Description Longue
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DescriptionGout)
+                Description du goût
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DescriptionTorrefaction)
+                Description de la torréfaction
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Amertume)
+                Amertume
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PrixUnite)
+                Prix par unité
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Collection)
+                Collection
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.Capsules) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Nom)
